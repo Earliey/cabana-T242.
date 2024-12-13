@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #333; /* Dark gray */
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #388E8E;
+    }
+    nav a.active {
+      background-color: #388E8E;
+    }
+    section {
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+    article {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #333; /* Dark gray */
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    /* Home Page Styling */
+    #Home h1 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: 0; /* Remove extra margin */
+    }
+    #Home img {
+      display: block; /* Make the image a block element */
+      margin: 2rem auto; /* Center the image horizontally */
+      max-width: 250px; /* Increased max-width */
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    /* Flex Page Styling */
+    #Flex img {
+      display: block;
+      margin: 1rem auto;
+      max-width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    /* Home Page Layout */
+    #Home h2 {
+      margin-bottom: 0; /* Remove bottom margin for "Hello, I'm" */
+    }
+    #Home h1 {
+      margin-top: 0; /* Remove top margin for your name */
+    }
+    #Home h3 {
+      margin-bottom: 0.2rem; /* Reduce margin for closer spacing */
+    }
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        margin-bottom: 0.5rem;
+      }
+    }
+    /* Flexbox Photo Gallery */
+    #photoGallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    #photoGallery .photoBox {
+      width: calc(20% - 1rem); /* 5 boxes, 20% each, with 1rem spacing */
+      margin-bottom: 1rem;
+    }
+    #photoGallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    /* IT111 Blog Entries Styling */
+    #IT111BlogEntries article.challenge {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav>
+    <a href="#Home" class="active">Home</a>
+    <a href="#IT111 Blog Entries">IT111 Blog Entries</a>
+    <a href="#Flex">Flex</a>
+  </nav>
+</header>
+<main>
+  <section id="Home">
+    <h3>Jann</h3>
+    <img src="https://assets.onecompiler.app/432kwj42h/432rngg35/IMG_20241212_222829.png" alt="Your Picture"> <!-- Replace with your image URL -->
+    <h2>Hello, I'm</h2>
+    <h1>Jann Earl Cabana</h1>
+    <p>An BSIT-1D student pursuing an IT career.  I balance my studies with my love of online gaming and the outdoors.</p>
+    <a href="#Myself 8 years from now">Myself 8 Years From Now</a>
+    <ul>
+      <li><a href="https://www.github.com/Earliey" target="_blank">Github</a></li>
+      <li><a href="https://www.instagram.com/earli3y/profilecard/?igsh=MTNpbnJtem50ZXlyag==" target="_blank">Instagram</a></li>
+      <li><a href="https://www.facebook.com/jannearl.17?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+    </ul>
+  </section>
+
+  <section id="Myself 8 years from now">
+    <h2>Myself 8 years from now</h2>
+    <article>
+      <h3>Myself 8 Years From Now</h3>
+      <p>I envision myself as a skilled and experienced IT professional, contributing to innovative projects and making a meaningful impact in the industry. I aspire to be a leader in my field, constantly seeking new challenges and opportunities to grow. I believe that my passion for technology, combined with my dedication to continuous learning, will enable me to achieve my goals and make a positive difference in the world.</p>
+    </article>
+    <p>Go back to <a href="#Home">Home</a> or visit <a href="#IT111 Blog Entries">IT111 Blog Entries</a> or <a href="#Flex">Flex</a></p>
+  </section>
+
+  <section id="IT111 Blog Entries">
+    <h2>IT111 Blog Entries</h2>
+    <article>
+      <h3>Introduction to Computing</h3>
+      <p>Introduction to Computing is like learning the basics of a powerful tool. It's about understanding how computers work, from the physical parts (hardware) to the instructions that make them run (software).  We learn how to write those instructions (programming) and how computers handle information (data).  It also covers how computers connect and talk to each other (networks).</p>
+    </article>
+    <article>
+      <h3>Information Processing Cycle</h3>
+      <p>The information processing cycle is the fundamental way computers work. It's a continuous loop where information is first received from the outside world (input), then manipulated and calculated by the computer (processing), and finally sent back out as results (output).  Some of this information is also saved for future use (storage).  </p>
+    </article>
+    <article>
+      <h3>Introduction to Computer Systems</h3>
+      <p>A computer system is like a living organism, made up of interconnected parts that work together to process information.  It consists of hardware, the physical components like the keyboard, monitor, and processor, and software, the programs and instructions that tell the hardware what to do.</p>
+    </article>
+    <article class="challenge">
+      <h3>Lesson Challenge Me The Most</h3>
+      <p>The lesson challenge me the most is making a website.</p>
+    </article>
+    <p>Go back to <a href="#Home">Home</a> or visit <a href="#Flex">Flex</a></p>
+  </section>
+  <section id="Flex">
+    <h2>Flex</h2>
+    <div id="photoGallery">
+      <div class="photoBox">
+        <img src="https://assets.onecompiler.app/432kwj42h/432vekxqp/received_1136351713548702.jpeg" alt="Photo 1">
+      </div>
+      <div class="photoBox">
+        <img src="https://assets.onecompiler.app/432kwj42h/432vekxqp/Messenger_creation_CD06DCD3-8CA7-4F72-93D1-792E11BB228F.jpeg" alt="Photo 2">
+      </div>
+      <div class="photoBox">
+        <img src="https://assets.onecompiler.app/432kwj42h/432vekxqp/IMG_20241129_164742.jpg" alt="Photo 3">
+      </div>
+      <div class="photoBox">
+        <img src="https://assets.onecompiler.app/432kwj42h/432vekxqp/IMG_20240529_164345.jpg" alt="Photo 4">
+      </div>
+      <div class="photoBox">
+        <img src="https://assets.onecompiler.app/432kwj42h/432vekxqp/received_1230103657956536.jpeg" alt="Photo 5">
+    </div>
+    <p>Go back to <a href="#Home">Home</a> or visit <a href="#IT111 Blog Entries">IT111 Blog Entries</a></p>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2023 Jann Earl Cabana</p>
+</footer>
+
+<script>
+  const link = document.querySelector('a[href="#Myself 8 years from now"]');
+  const section = document.querySelector('section#Myself 8 years from now');
+
+  link.addEventListener('click', (event) => {
+    event.preventDefault();
+    section.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
